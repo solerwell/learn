@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Created by weizengjie on 2016/12/20.
  */
-public class RadomIP {
+public class RandomIP {
     /*
      * 随机生成国内IP地址
      */
