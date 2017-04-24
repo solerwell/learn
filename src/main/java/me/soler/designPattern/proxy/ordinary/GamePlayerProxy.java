@@ -1,8 +1,9 @@
-package me.soler.designPattern.proxy.typicalProxy;/**
+package me.soler.designPattern.proxy.ordinary;/**
  * Created by soler on 2017/4/18.
  */
 
 import me.soler.designPattern.proxy.IGamePlayer;
+import me.soler.designPattern.proxy.typicalProxy.Countable;
 
 /**
  * <p>游戏玩家代理类 </p>

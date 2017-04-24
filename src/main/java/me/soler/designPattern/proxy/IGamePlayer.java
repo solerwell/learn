@@ -1,4 +1,4 @@
-package me.soler.designPattern.proxy.typicalProxy;/**
+package me.soler.designPattern.proxy;/**
  * Created by soler on 2017/4/18.
  */
 
