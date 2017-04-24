@@ -10,19 +10,29 @@ package me.soler.designPattern.proxy;/**
  */
 public class GamePlayerProxy implements IGamePlayer, Countable{
 
-    public void count() {
+    private IGamePlayer target;
 
+    public GamePlayerProxy(IGamePlayer target) {
+        this.target = target;
+    }
+
+    public GamePlayerProxy(String user,String name) {
+    }
+
+    public void count() {
+        System.out.println("is going to count...");
     }
 
     public void login(String name, String pwd) {
-
+        target.login(name,pwd);
     }
 
     public void killBoss() {
-
+        target.killBoss();
     }
 
     public void upgrade() {
-
+        target.upgrade();
+        count();
     }
 }

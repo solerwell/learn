@@ -9,8 +9,16 @@ package me.soler.designPattern.proxy;/**
  * @since 2017/4/18
  */
 public class GamePlayer implements IGamePlayer {
+    // 用户名
+    private String user;
+    // 昵称
     private String name;
     private static final String PASSWORD = "123456";
+
+    public GamePlayer(String user, String name) {
+        this.user = user;
+        this.name = name;
+    }
 
     public void login(String name, String pwd) {
         if (!PASSWORD.equals(pwd))
