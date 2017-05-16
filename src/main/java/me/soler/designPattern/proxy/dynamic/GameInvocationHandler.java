@@ -3,6 +3,7 @@ package me.soler.designPattern.proxy.dynamic;/**
  */
 
 import me.soler.designPattern.proxy.GamePlayer;
+import me.soler.designPattern.proxy.IGamePlayer;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -16,12 +17,13 @@ import java.lang.reflect.Proxy;
  */
 public class GameInvocationHandler  implements InvocationHandler{
     private IAdvice advice;
-    private GamePlayer target;
-    GameInvocationHandler(IAdvice advice){
+    private IGamePlayer target;
+    GameInvocationHandler(IAdvice advice,IGamePlayer target){
         this.advice = advice;
+        this.target = target;
     }
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-//        ClassLoader loader =
-        return Proxy.newProxyInstance();
+
+        return method.invoke(args);
     }
 }
