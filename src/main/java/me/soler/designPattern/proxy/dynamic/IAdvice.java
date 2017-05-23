@@ -8,6 +8,7 @@ package me.soler.designPattern.proxy.dynamic;/**
  * @author weizengjie
  * @since 2017/5/16
  */
+@FunctionalInterface
 public interface IAdvice {
     void exec();
 }
